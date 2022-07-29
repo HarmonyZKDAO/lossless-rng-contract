@@ -1,0 +1,24 @@
+{
+  "extends": "solhint:recommended",
+  "plugins": [],
+  "rules": {
+      "func-order": "off",
+      "func-visibility": [
+        "warn",
+        {
+          "ignoreConstructors": true
+        }
+      ],
+      "mark-callable-contracts": "off",
+      "no-empty-blocks": "off",
+      "compiler-version": ["error", "0.8.6"],
+      "private-vars-leading-underscore": "off",
+      "code-complexity": "warn",
+      "const-name-snakecase": "warn",
+      "function-max-lines": "warn",
+      "max-line-length": ["warn", 160],
+      "avoid-suicide": "error",
+      "avoid-sha3": "warn",
+      "reason-string": ["warn", {"maxLength": 48}]
+  }
+}
