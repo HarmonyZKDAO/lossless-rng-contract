@@ -93,12 +93,12 @@ contract RNGBlockVRF is RNGInterface, Ownable {
   /// @dev Gets a seed for a random number from the latest available blockhash
   /// @return seed The seed to be used for generating a random number
   function _getSeed() internal view virtual returns (uint256 seed) {
-    return uint256(_vrf());
+    return uint256(_callVrf());
   }
 
   /// @dev Gets a verifiable random number from the Harmony Core blockchain
-  /// @return result The verifiable random function used for generating a random number
-  function _vrf() internal view returns (bytes32 result) {
+  /// @return result The generated random number in bytes
+  function _getVrf() internal view returns (bytes32 result) {
         uint256[1] memory bn;
         bn[0] = block.number - 1;
         assembly {
@@ -109,6 +109,14 @@ contract RNGBlockVRF is RNGInterface, Ownable {
             result := mload(memPtr)
         }
     }
+
+  /// @dev Convert the generated vrf to uint256 when called
+  /// @return result The verifiable random number in uint256
+  function _callVrf() internal view returns (uint256) {
+      bytes32 bytes32result = _getVrf();
+      uint256 uint256result = uint256(bytes32result);
+      return uint256result;
+  }
 
   /// @dev Stores the latest random number by request ID and logs the event
   /// @param requestId The ID of the request to store the random number
