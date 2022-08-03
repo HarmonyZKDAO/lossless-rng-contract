@@ -1,0 +1,376 @@
+{
+  "address": "0x56e3625601Bed73ca4B96ee1C11Cf85C0d131f46",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "requestId",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "randomNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "RandomNumberCompleted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "requestId",
+          "type": "uint32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "RandomNumberRequested",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getLastRequestId",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "requestId",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRequestFee",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "feeToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "requestFee",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "requestId",
+          "type": "uint32"
+        }
+      ],
+      "name": "isRequestComplete",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "isCompleted",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "requestId",
+          "type": "uint32"
+        }
+      ],
+      "name": "randomNumber",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "randomNum",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "requestRandomNumber",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "requestId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "lockBlock",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x07973d8f66d380c01c9a527f4739b8490dc0a93fbe2750ac8d9807a570b24771",
+  "receipt": {
+    "to": null,
+    "from": "0xA5fff25d1E94e6e7813De5370de468c5651D342d",
+    "contractAddress": "0x56e3625601Bed73ca4B96ee1C11Cf85C0d131f46",
+    "transactionIndex": 0,
+    "gasUsed": "475266",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000020000100000000000000800000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000024000000000000000000000000000040000000000000000000000400000000000000",
+    "blockHash": "0x7d9fff776711b4ab92f8d1aa5fd5b0da8fd41ef0241a65c0f13d3cc791f41df2",
+    "transactionHash": "0x07973d8f66d380c01c9a527f4739b8490dc0a93fbe2750ac8d9807a570b24771",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 29424553,
+        "transactionHash": "0x07973d8f66d380c01c9a527f4739b8490dc0a93fbe2750ac8d9807a570b24771",
+        "address": "0x56e3625601Bed73ca4B96ee1C11Cf85C0d131f46",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000a5fff25d1e94e6e7813de5370de468c5651d342d"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0x7d9fff776711b4ab92f8d1aa5fd5b0da8fd41ef0241a65c0f13d3cc791f41df2"
+      }
+    ],
+    "blockNumber": 29424553,
+    "cumulativeGasUsed": "475266",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "de0fd1140ab5be78020e4ebafa4f909e",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint32\",\"name\":\"requestId\",\"type\":\"uint32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"randomNumber\",\"type\":\"uint256\"}],\"name\":\"RandomNumberCompleted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint32\",\"name\":\"requestId\",\"type\":\"uint32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"}],\"name\":\"RandomNumberRequested\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"getLastRequestId\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"requestId\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getRequestFee\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"feeToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"requestFee\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"requestId\",\"type\":\"uint32\"}],\"name\":\"isRequestComplete\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"isCompleted\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"requestId\",\"type\":\"uint32\"}],\"name\":\"randomNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"randomNum\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"requestRandomNumber\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"requestId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lockBlock\",\"type\":\"uint32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getLastRequestId()\":{\"returns\":{\"requestId\":\"The last request id used in the last request\"}},\"getRequestFee()\":{\"returns\":{\"feeToken\":\"The address of the token that is used to pay fees\",\"requestFee\":\"The fee required to be paid to make a request\"}},\"isRequestComplete(uint32)\":{\"details\":\"For time-delayed requests, this function is used to check/confirm completion\",\"params\":{\"requestId\":\"The ID of the request used to get the results of the RNG service\"},\"returns\":{\"isCompleted\":\"True if the request has completed and a random number is available, false otherwise\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"randomNumber(uint32)\":{\"params\":{\"requestId\":\"The ID of the request used to get the results of the RNG service\"},\"returns\":{\"randomNum\":\"The random number\"}},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"requestRandomNumber()\":{\"details\":\"Some services will complete the request immediately, others may have a time-delaySome services require payment in the form of a token, such as $LINK for Chainlink VRF\",\"returns\":{\"lockBlock\":\"The block number at which the RNG service will start generating time-delayed randomness.  The calling contract should \\\"lock\\\" all activity until the result is available via the `requestId`\",\"requestId\":\"The ID of the request used to get the results of the RNG service\"}},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"stateVariables\":{\"randomNumbers\":{\"details\":\"A list of random numbers from past requests mapped by request id\"},\"requestCount\":{\"details\":\"A counter for the number of requests made used for request ids\"},\"requestLockBlock\":{\"details\":\"A list of blocks to be locked at based on past requests mapped by request id\"}},\"version\":1},\"userdoc\":{\"events\":{\"RandomNumberCompleted(uint32,uint256)\":{\"notice\":\"Emitted when an existing request for a random number has been completed\"},\"RandomNumberRequested(uint32,address)\":{\"notice\":\"Emitted when a new request for a random number has been submitted\"}},\"kind\":\"user\",\"methods\":{\"getLastRequestId()\":{\"notice\":\"Gets the last request id used by the RNG service\"},\"getRequestFee()\":{\"notice\":\"Gets the Fee for making a Request against an RNG service\"},\"isRequestComplete(uint32)\":{\"notice\":\"Checks if the request for randomness from the 3rd-party service has completed\"},\"randomNumber(uint32)\":{\"notice\":\"Gets the random number produced by the 3rd-party service\"},\"requestRandomNumber()\":{\"notice\":\"Sends a request for a random number to the 3rd-party service\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/RNGBlockVRF.sol\":\"RNGBlockVRF\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (access/Ownable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal virtual {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\"},\"contracts/RNGBlockVRF.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\n\\npragma solidity 0.8.6;\\n\\nimport \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\n\\nimport \\\"./RNGInterface.sol\\\";\\n\\ncontract RNGBlockVRF is RNGInterface, Ownable {\\n  /// @dev A counter for the number of requests made used for request ids\\n  uint32 internal requestCount;\\n\\n  /// @dev A list of random numbers from past requests mapped by request id\\n  mapping(uint32 => uint256) internal randomNumbers;\\n\\n  /// @dev A list of blocks to be locked at based on past requests mapped by request id\\n  mapping(uint32 => uint32) internal requestLockBlock;\\n\\n  /// @notice Gets the last request id used by the RNG service\\n  /// @return requestId The last request id used in the last request\\n  function getLastRequestId() external view override returns (uint32 requestId) {\\n    return requestCount;\\n  }\\n\\n  /// @notice Gets the Fee for making a Request against an RNG service\\n  /// @return feeToken The address of the token that is used to pay fees\\n  /// @return requestFee The fee required to be paid to make a request\\n  function getRequestFee() external pure override returns (address feeToken, uint256 requestFee) {\\n    return (address(0), 0);\\n  }\\n\\n  /// @notice Sends a request for a random number to the 3rd-party service\\n  /// @dev Some services will complete the request immediately, others may have a time-delay\\n  /// @dev Some services require payment in the form of a token, such as $LINK for Chainlink VRF\\n  /// @return requestId The ID of the request used to get the results of the RNG service\\n  /// @return lockBlock The block number at which the RNG service will start generating time-delayed randomness.  The calling contract\\n  /// should \\\"lock\\\" all activity until the result is available via the `requestId`\\n  function requestRandomNumber()\\n    external\\n    virtual\\n    override\\n    returns (uint32 requestId, uint32 lockBlock)\\n  {\\n    requestId = _getNextRequestId();\\n    lockBlock = uint32(block.number);\\n\\n    requestLockBlock[requestId] = lockBlock;\\n\\n    emit RandomNumberRequested(requestId, msg.sender);\\n  }\\n\\n  /// @notice Checks if the request for randomness from the 3rd-party service has completed\\n  /// @dev For time-delayed requests, this function is used to check/confirm completion\\n  /// @param requestId The ID of the request used to get the results of the RNG service\\n  /// @return isCompleted True if the request has completed and a random number is available, false otherwise\\n  function isRequestComplete(uint32 requestId)\\n    external\\n    view\\n    virtual\\n    override\\n    returns (bool isCompleted)\\n  {\\n    return _isRequestComplete(requestId);\\n  }\\n\\n  /// @notice Gets the random number produced by the 3rd-party service\\n  /// @param requestId The ID of the request used to get the results of the RNG service\\n  /// @return randomNum The random number\\n  function randomNumber(uint32 requestId) external virtual override returns (uint256 randomNum) {\\n    require(_isRequestComplete(requestId), \\\"RNGBlockVRF/request-incomplete\\\");\\n\\n    if (randomNumbers[requestId] == 0) {\\n      _storeResult(requestId, _getSeed());\\n    }\\n\\n    return randomNumbers[requestId];\\n  }\\n\\n  /// @dev Checks if the request for randomness from the 3rd-party service has completed\\n  /// @param requestId The ID of the request used to get the results of the RNG service\\n  /// @return True if the request has completed and a random number is available, false otherwise\\n  function _isRequestComplete(uint32 requestId) internal view returns (bool) {\\n    return block.number > (requestLockBlock[requestId] + 1);\\n  }\\n\\n  /// @dev Gets the next consecutive request ID to be used\\n  /// @return requestId The ID to be used for the next request\\n  function _getNextRequestId() internal returns (uint32 requestId) {\\n    requestCount++;\\n    requestId = requestCount;\\n  }\\n\\n  /// @dev Gets a seed for a random number from the latest available blockhash\\n  /// @return seed The seed to be used for generating a random number\\n  function _getSeed() internal view virtual returns (uint256 seed) {\\n    return uint256(_callVrf());\\n  }\\n\\n  /// @dev Gets a verifiable random number from the Harmony Core blockchain\\n  /// @return result The generated random number in bytes\\n  function _getVrf() internal view returns (bytes32 result) {\\n        uint256[1] memory bn;\\n        bn[0] = block.number - 1;\\n        assembly {\\n            let memPtr := mload(0x40)\\n            if iszero(staticcall(not(0), 0xff, bn, 0x20, memPtr, 0x20)) {\\n                invalid()\\n            }\\n            result := mload(memPtr)\\n        }\\n    }\\n\\n  /// @dev Convert the generated vrf to uint256 when called\\n  /// @return result The verifiable random number in uint256\\n  function _callVrf() internal view returns (uint256) {\\n      bytes32 bytes32result = _getVrf();\\n      uint256 uint256result = uint256(bytes32result);\\n      return uint256result;\\n  }\\n\\n  /// @dev Stores the latest random number by request ID and logs the event\\n  /// @param requestId The ID of the request to store the random number\\n  /// @param result The random number for the request ID\\n  function _storeResult(uint32 requestId, uint256 result) internal {\\n    // Store random value\\n    randomNumbers[requestId] = result;\\n\\n    emit RandomNumberCompleted(requestId, result);\\n  }\\n}\\n\",\"keccak256\":\"0x371e6dd654cc0e2322ee045f9be181b6aa1c7aa76faac0dadd400e1978106a7d\",\"license\":\"GPL-3.0\"},\"contracts/RNGInterface.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\n\\npragma solidity 0.8.6;\\n\\n/**\\n * @title Random Number Generator Interface\\n * @notice Provides an interface for requesting random numbers from 3rd-party RNG services (Chainlink VRF, Starkware VDF, etc..)\\n */\\ninterface RNGInterface {\\n  /**\\n   * @notice Emitted when a new request for a random number has been submitted\\n   * @param requestId The indexed ID of the request used to get the results of the RNG service\\n   * @param sender The indexed address of the sender of the request\\n   */\\n  event RandomNumberRequested(uint32 indexed requestId, address indexed sender);\\n\\n  /**\\n   * @notice Emitted when an existing request for a random number has been completed\\n   * @param requestId The indexed ID of the request used to get the results of the RNG service\\n   * @param randomNumber The random number produced by the 3rd-party service\\n   */\\n  event RandomNumberCompleted(uint32 indexed requestId, uint256 randomNumber);\\n\\n  /**\\n   * @notice Gets the last request id used by the RNG service\\n   * @return requestId The last request id used in the last request\\n   */\\n  function getLastRequestId() external view returns (uint32 requestId);\\n\\n  /**\\n   * @notice Gets the Fee for making a Request against an RNG service\\n   * @return feeToken The address of the token that is used to pay fees\\n   * @return requestFee The fee required to be paid to make a request\\n   */\\n  function getRequestFee() external view returns (address feeToken, uint256 requestFee);\\n\\n  /**\\n   * @notice Sends a request for a random number to the 3rd-party service\\n   * @dev Some services will complete the request immediately, others may have a time-delay\\n   * @dev Some services require payment in the form of a token, such as $LINK for Chainlink VRF\\n   * @return requestId The ID of the request used to get the results of the RNG service\\n   * @return lockBlock The block number at which the RNG service will start generating time-delayed randomness.\\n   * The calling contract should \\\"lock\\\" all activity until the result is available via the `requestId`\\n   */\\n  function requestRandomNumber() external returns (uint32 requestId, uint32 lockBlock);\\n\\n  /**\\n   * @notice Checks if the request for randomness from the 3rd-party service has completed\\n   * @dev For time-delayed requests, this function is used to check/confirm completion\\n   * @param requestId The ID of the request used to get the results of the RNG service\\n   * @return isCompleted True if the request has completed and a random number is available, false otherwise\\n   */\\n  function isRequestComplete(uint32 requestId) external view returns (bool isCompleted);\\n\\n  /**\\n   * @notice Gets the random number produced by the 3rd-party service\\n   * @param requestId The ID of the request used to get the results of the RNG service\\n   * @return randomNum The random number\\n   */\\n  function randomNumber(uint32 requestId) external returns (uint256 randomNum);\\n}\\n\",\"keccak256\":\"0x24803ae776bba768a3a3f65d3b7e5fc100c7b5881a8e5e39d6c5df2735a3b5cb\",\"license\":\"GPL-3.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b61006f565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b61073a8061007e6000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c80638678a7b21161005b5780638678a7b2146101095780638da5cb5b1461012e5780639d2a5f9814610156578063f2fde38b1461017757600080fd5b80630d37b5371461008d57806319c2b4c3146100a65780633a19b9bc146100dc578063715018a6146100ff575b600080fd5b6040805160008082526020820152015b60405180910390f35b60005474010000000000000000000000000000000000000000900463ffffffff1660405163ffffffff909116815260200161009d565b6100ef6100ea36600461064c565b61018a565b604051901515815260200161009d565b61010761019b565b005b610111610213565b6040805163ffffffff93841681529290911660208301520161009d565b60005460405173ffffffffffffffffffffffffffffffffffffffff909116815260200161009d565b61016961016436600461064c565b610292565b60405190815260200161009d565b61010761018536600461060f565b61032d565b600061019582610429565b92915050565b60005473ffffffffffffffffffffffffffffffffffffffff1633146102075760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064015b60405180910390fd5b610211600061045c565b565b60008061021e6104d1565b63ffffffff81811660008181526002602052604080822080547fffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000164395861617905551939550919350339290917fcf635b20f2defc1e71326dc4f0b616fa676e29a5bae87da19fcaddc550b33f0391a39091565b600061029d82610429565b6102e95760405162461bcd60e51b815260206004820152601e60248201527f524e47426c6f636b5652462f726571756573742d696e636f6d706c657465000060448201526064016101fe565b63ffffffff8216600090815260016020526040902054610314576103148261030f610536565b610545565b5063ffffffff1660009081526001602052604090205490565b60005473ffffffffffffffffffffffffffffffffffffffff1633146103945760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016101fe565b73ffffffffffffffffffffffffffffffffffffffff811661041d5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201527f646472657373000000000000000000000000000000000000000000000000000060648201526084016101fe565b6104268161045c565b50565b63ffffffff808216600090815260026020526040812054909161044e91166001610672565b63ffffffff16431192915050565b6000805473ffffffffffffffffffffffffffffffffffffffff8381167fffffffffffffffffffffffff0000000000000000000000000000000000000000831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000805474010000000000000000000000000000000000000000900463ffffffff168160146104ff836106b1565b91906101000a81548163ffffffff021916908363ffffffff16021790555050600060149054906101000a900463ffffffff16905090565b600061054061059b565b905090565b63ffffffff821660008181526001602052604090819020839055517f629394f18de7accce1179c28c39be59503a57cbcf45980a2772743b041b362719061058f9084815260200190565b60405180910390a25050565b60008061019560006105ab6105f1565b6105b660014361069a565b8152604051602081818460ff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa6105ea57fe5b5192915050565b60405180602001604052806001906020820280368337509192915050565b60006020828403121561062157600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461064557600080fd5b9392505050565b60006020828403121561065e57600080fd5b813563ffffffff8116811461064557600080fd5b600063ffffffff808316818516808303821115610691576106916106d5565b01949350505050565b6000828210156106ac576106ac6106d5565b500390565b600063ffffffff808316818114156106cb576106cb6106d5565b6001019392505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fdfea264697066735822122030efca6c638c546369ed1a7dacfa0dc8e8f51745687a09764010da678075c54b64736f6c63430008060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c80638678a7b21161005b5780638678a7b2146101095780638da5cb5b1461012e5780639d2a5f9814610156578063f2fde38b1461017757600080fd5b80630d37b5371461008d57806319c2b4c3146100a65780633a19b9bc146100dc578063715018a6146100ff575b600080fd5b6040805160008082526020820152015b60405180910390f35b60005474010000000000000000000000000000000000000000900463ffffffff1660405163ffffffff909116815260200161009d565b6100ef6100ea36600461064c565b61018a565b604051901515815260200161009d565b61010761019b565b005b610111610213565b6040805163ffffffff93841681529290911660208301520161009d565b60005460405173ffffffffffffffffffffffffffffffffffffffff909116815260200161009d565b61016961016436600461064c565b610292565b60405190815260200161009d565b61010761018536600461060f565b61032d565b600061019582610429565b92915050565b60005473ffffffffffffffffffffffffffffffffffffffff1633146102075760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064015b60405180910390fd5b610211600061045c565b565b60008061021e6104d1565b63ffffffff81811660008181526002602052604080822080547fffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000164395861617905551939550919350339290917fcf635b20f2defc1e71326dc4f0b616fa676e29a5bae87da19fcaddc550b33f0391a39091565b600061029d82610429565b6102e95760405162461bcd60e51b815260206004820152601e60248201527f524e47426c6f636b5652462f726571756573742d696e636f6d706c657465000060448201526064016101fe565b63ffffffff8216600090815260016020526040902054610314576103148261030f610536565b610545565b5063ffffffff1660009081526001602052604090205490565b60005473ffffffffffffffffffffffffffffffffffffffff1633146103945760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016101fe565b73ffffffffffffffffffffffffffffffffffffffff811661041d5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201527f646472657373000000000000000000000000000000000000000000000000000060648201526084016101fe565b6104268161045c565b50565b63ffffffff808216600090815260026020526040812054909161044e91166001610672565b63ffffffff16431192915050565b6000805473ffffffffffffffffffffffffffffffffffffffff8381167fffffffffffffffffffffffff0000000000000000000000000000000000000000831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000805474010000000000000000000000000000000000000000900463ffffffff168160146104ff836106b1565b91906101000a81548163ffffffff021916908363ffffffff16021790555050600060149054906101000a900463ffffffff16905090565b600061054061059b565b905090565b63ffffffff821660008181526001602052604090819020839055517f629394f18de7accce1179c28c39be59503a57cbcf45980a2772743b041b362719061058f9084815260200190565b60405180910390a25050565b60008061019560006105ab6105f1565b6105b660014361069a565b8152604051602081818460ff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa6105ea57fe5b5192915050565b60405180602001604052806001906020820280368337509192915050565b60006020828403121561062157600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461064557600080fd5b9392505050565b60006020828403121561065e57600080fd5b813563ffffffff8116811461064557600080fd5b600063ffffffff808316818516808303821115610691576106916106d5565b01949350505050565b6000828210156106ac576106ac6106d5565b500390565b600063ffffffff808316818114156106cb576106cb6106d5565b6001019392505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fdfea264697066735822122030efca6c638c546369ed1a7dacfa0dc8e8f51745687a09764010da678075c54b64736f6c63430008060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getLastRequestId()": {
+        "returns": {
+          "requestId": "The last request id used in the last request"
+        }
+      },
+      "getRequestFee()": {
+        "returns": {
+          "feeToken": "The address of the token that is used to pay fees",
+          "requestFee": "The fee required to be paid to make a request"
+        }
+      },
+      "isRequestComplete(uint32)": {
+        "details": "For time-delayed requests, this function is used to check/confirm completion",
+        "params": {
+          "requestId": "The ID of the request used to get the results of the RNG service"
+        },
+        "returns": {
+          "isCompleted": "True if the request has completed and a random number is available, false otherwise"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "randomNumber(uint32)": {
+        "params": {
+          "requestId": "The ID of the request used to get the results of the RNG service"
+        },
+        "returns": {
+          "randomNum": "The random number"
+        }
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "requestRandomNumber()": {
+        "details": "Some services will complete the request immediately, others may have a time-delaySome services require payment in the form of a token, such as $LINK for Chainlink VRF",
+        "returns": {
+          "lockBlock": "The block number at which the RNG service will start generating time-delayed randomness.  The calling contract should \"lock\" all activity until the result is available via the `requestId`",
+          "requestId": "The ID of the request used to get the results of the RNG service"
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "stateVariables": {
+      "randomNumbers": {
+        "details": "A list of random numbers from past requests mapped by request id"
+      },
+      "requestCount": {
+        "details": "A counter for the number of requests made used for request ids"
+      },
+      "requestLockBlock": {
+        "details": "A list of blocks to be locked at based on past requests mapped by request id"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "RandomNumberCompleted(uint32,uint256)": {
+        "notice": "Emitted when an existing request for a random number has been completed"
+      },
+      "RandomNumberRequested(uint32,address)": {
+        "notice": "Emitted when a new request for a random number has been submitted"
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "getLastRequestId()": {
+        "notice": "Gets the last request id used by the RNG service"
+      },
+      "getRequestFee()": {
+        "notice": "Gets the Fee for making a Request against an RNG service"
+      },
+      "isRequestComplete(uint32)": {
+        "notice": "Checks if the request for randomness from the 3rd-party service has completed"
+      },
+      "randomNumber(uint32)": {
+        "notice": "Gets the random number produced by the 3rd-party service"
+      },
+      "requestRandomNumber()": {
+        "notice": "Sends a request for a random number to the 3rd-party service"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 4077,
+        "contract": "contracts/RNGBlockVRF.sol:RNGBlockVRF",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 5116,
+        "contract": "contracts/RNGBlockVRF.sol:RNGBlockVRF",
+        "label": "requestCount",
+        "offset": 20,
+        "slot": "0",
+        "type": "t_uint32"
+      },
+      {
+        "astId": 5121,
+        "contract": "contracts/RNGBlockVRF.sol:RNGBlockVRF",
+        "label": "randomNumbers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_uint32,t_uint256)"
+      },
+      {
+        "astId": 5126,
+        "contract": "contracts/RNGBlockVRF.sol:RNGBlockVRF",
+        "label": "requestLockBlock",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_uint32,t_uint32)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_uint32,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_uint32",
+        "label": "mapping(uint32 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_mapping(t_uint32,t_uint32)": {
+        "encoding": "mapping",
+        "key": "t_uint32",
+        "label": "mapping(uint32 => uint32)",
+        "numberOfBytes": "32",
+        "value": "t_uint32"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint32": {
+        "encoding": "inplace",
+        "label": "uint32",
+        "numberOfBytes": "4"
+      }
+    }
+  }
+}
